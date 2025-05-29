@@ -11,19 +11,21 @@ import { Separator } from "@/components/ui/separator"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Icons } from "@/components/icons"
 import { useMobile } from "@/hooks/use-mobile"
+import { useRouter } from "next/navigation"
 
 export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false)
   const isMobile = useMobile()
   const [splineLoaded, setSplineLoaded] = useState(false)
+  const router = useRouter()
 
   async function onSubmit(event: React.FormEvent) {
     event.preventDefault()
     setIsLoading(true)
 
-    // Simulate login process
     setTimeout(() => {
       setIsLoading(false)
+      router.push("/")
     }, 2000)
   }
 

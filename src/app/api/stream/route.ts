@@ -9,7 +9,7 @@ const CAMERA_URL = 'http://172.20.10.7:81/stream'
 export const dynamic      = 'force-dynamic'
 export const fetchCache   = 'default-no-store'
 // (optional) guarantee Node runtime — avoids Edge restrictions
-export const runtime      = 'nodejs'       // default in most cases :contentReference[oaicite:2]{index=2}
+export const runtime      = 'nodejs'  
 
 export async function GET(_: NextRequest) {
   // Open a long-lived connection to the ESP32-CAM
