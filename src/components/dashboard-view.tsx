@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { BarChart3, Users, TrendingUp, Activity } from "lucide-react"
 import Cam from "./camera-video"
+import Joystick from 'rc-joystick';
 
 export function DashboardView() {
   const stats = [
@@ -51,8 +52,13 @@ export function DashboardView() {
             <Cam/>
           </CardContent>
         </Card>
+        <Card className="flex justify-center items-center">
+          <CardContent>
+            <Joystick />
+          </CardContent>
+        </Card>
       </div>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat, index) => (
           <Card key={index}>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -68,7 +74,7 @@ export function DashboardView() {
             </CardContent>
           </Card>
         ))}
-      </div>
+      </div> */}
 
       <div className="grid gap-4 md:grid-cols-2">
         <Card>
@@ -82,7 +88,7 @@ export function DashboardView() {
                 <div key={item} className="flex items-center space-x-4">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium">New user registered</p>
+                    <p className="text-sm font-medium">Baby cry</p>
                     <p className="text-xs text-muted-foreground">2 minutes ago</p>
                   </div>
                 </div>

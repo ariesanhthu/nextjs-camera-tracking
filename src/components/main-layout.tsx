@@ -26,7 +26,7 @@ export function MainLayout() {
 
   useEffect(() => {
     // Giả lập login thành công
-    setUser({ name: "John Doe", email: "john.doe@example.com", avatar: "/avatar.png" })
+    setUser({ name: "Thu", email: "aries.anhthu@gmail.com", avatar: "/avatar.png" })
     setActiveTab("dashboard")
   }, [setUser])
 

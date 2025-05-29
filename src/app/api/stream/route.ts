@@ -2,7 +2,7 @@
 import type { NextRequest } from 'next/server'
 
 // ----  adjust to your camera’s IP  -----------------------------
-const CAMERA_URL = 'http://172.20.10.7:81/stream'
+const CAMERA_URL = 'http://128.1.0.21:81/stream'
 // ---------------------------------------------------------------
 
 // Disable static optimisation and caching for a live stream
