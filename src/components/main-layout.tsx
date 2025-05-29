@@ -15,7 +15,7 @@ import {
 import { MessageSquare, LayoutDashboard, FileText, UserIcon, LogOut, Settings, ChevronDown } from "lucide-react"
 import { DashboardView } from "@/components/dashboard-view"
 import { ReportsView } from "@/components/reports-view"
-import { ChatbotView } from "@/components/chatbot-view"
+import { ChatbotView } from "@/features/chatbot/chatbot-view"
 import { useRouter } from "next/navigation"
 import { UserProvider, useUser } from "@/contexts/user-context"
 

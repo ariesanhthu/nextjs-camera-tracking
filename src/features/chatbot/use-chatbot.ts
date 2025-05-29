@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { sendChatMessage } from "../services/chat"
-import { TextSplit } from "../lib/textsplit"
+import { sendChatMessage } from "./chat"
+import { TextSplit } from "@/lib/textsplit"
 
 interface Message {
   id: string
